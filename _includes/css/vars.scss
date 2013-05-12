@@ -1,0 +1,28 @@
+$cols: 10;
+$gutter: 10px;
+$colW: 100%/$cols;
+$w: 990px;
+
+/* colours */
+
+$color1: #fff;
+$color2: #000;
+$color3: #aaa;
+$alt1: #000;
+
+
+@mixin ib{display:inline-block;*display:inline;}
+@mixin clearfix{content:".";display:block;height:0;clear:both;visibility:hidden;}
+@mixin no-list{margin:0;padding: 0;list-style-type: none;}
+@mixin transition($args){
+	-webkit-transition:$args;
+	-moz-transition:$args;
+	-o-transition:$args;
+	transition:$args;
+}
+@mixin box-sizing($args){
+	-webkit-box-sizing: $args;
+	-moz-box-sizing: $args;
+	-o-box-sizing: $args;
+	box-sizing: $args;
+}
